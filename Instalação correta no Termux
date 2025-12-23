@@ -1,0 +1,5 @@
+pkg update && pkg upgrade -y
+pkg install nodejs-lts git ffmpeg -y
+git clone https://github.com/Renanvargas/Vemonbot2.git
+cd Vemonbot2
+npm install
