@@ -1,13 +1,17 @@
-const { makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
+import makeWASocket, { useMultiFileAuthState } from '@whiskeysockets/baileys';
 
-async function start() {
+async function connectBot() {
+  const talkdrove = {
+    usePairingCode: true, // se quiser usar código em vez de QR
+    phoneNumber: '5532998665591' // seu número com DDI
+  };
+
   const { state, saveCreds } = await useMultiFileAuthState('./session');
   const sock = makeWASocket({
     auth: state,
-    printQRInTerminal: true
+    printQRInTerminal: !talkdrove.usePairingCode
   });
 
-  // 👉 É AQUI que você adiciona o trecho:
   if (talkdrove.usePairingCode && !state.creds.registered) {
     try {
       const code = await sock.requestPairingCode(talkdrove.phoneNumber);
@@ -19,3 +23,5 @@ async function start() {
 
   sock.ev.on('creds.update', saveCreds);
 }
+
+connectBot();
