@@ -13,3 +13,7 @@ const settings = {
 }
 
 module.exports = settings
+
+cd Vemonbot2
+nano settings.js
+node index.js
