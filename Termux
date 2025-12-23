@@ -1,0 +1,27 @@
+import makeWASocket, { useMultiFileAuthState } from '@whiskeysockets/baileys';
+
+async function connectBot() {
+  const talkdrove = {
+    usePairingCode: true, // usar código em vez de QR
+    phoneNumber: '5532998665591' // seu número com DDI
+  };
+
+  const { state, saveCreds } = await useMultiFileAuthState('./session');
+  const sock = makeWASocket({
+    auth: state,
+    printQRInTerminal: !talkdrove.usePairingCode
+  });
+
+  if (talkdrove.usePairingCode && !state.creds.registered) {
+    try {
+      const code = await sock.requestPairingCode(talkdrove.phoneNumber);
+      console.log('📲 Código de pareamento:', code);
+    } catch (e) {
+      console.log('❌ Falha no pareamento, use QR Code');
+    }
+  }
+
+  sock.ev.on('creds.update', saveCreds);
+}
+
+connectBot();
