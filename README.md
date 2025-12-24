@@ -1,32 +1,26 @@
 # 🤖 VemonBot2
 
-Bot de WhatsApp desenvolvido em **Node.js**, utilizando a biblioteca **Baileys**.  
-Criado para automatizar mensagens, responder comandos e facilitar a administração de grupos no WhatsApp.
+Instalação Via Termux  
 
----
+1° Comando
 
-## 🚀 Funcionalidades
+apt-get update -y && pkg upgrade -y && pkg update -y && pkg install nodejs -y && pkg install nodejs-lts -y && pkg install ffmpeg -y && pkg install wget -y && pkg install tesseract -y && pkg install git -y
+ATENÇÃO: Será necessário digitar y toda vez que pedir a caixa [y/n]
 
-- 📜 Menu interativo de comandos
-- 🤖 Respostas automáticas
-- 🎉 Comandos de diversão
-- 🔧 Utilidades práticas
-- 🛡️ Comandos administrativos para grupos
-- ⚡ Conexão rápida via Baileys
+2° Comando
 
----
+termux-setup-storage
+3° Comando
 
-## 🧰 Tecnologias utilizadas
+cd /sdcard/Download && git clone https://github.com/Renanvargas/Vemonbot2
 
-- **Node.js**
-- **Baileys**
-- **JavaScript**
+4° Comando
 
----
+cd /storage/emulated/0/Download/Vemonbot2 && npm start
+💾 START DO BOT 💾 
 
-## 📦 Instalação
+npm start
 
-```bash
 git clone https://github.com/Renanvargas/Vemonbot2.git
 cd Vemonbot2
 npm install
