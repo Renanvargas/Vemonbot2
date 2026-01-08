@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <p>
-<img src= "https://ibb.co/zhpZYpFn" alt="RenanBOT v4" width="720">
+<img src="https://ibb.co/zhpZYpFn" alt="RenanBOT v4" width="720">
 </p>
 
 <p align="center">
@@ -48,4 +48,4 @@ sh blackmd.sh
 sh qrcode.sh
 ```
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=falso&vCenter=falso&lines=֎+𝐁𝐋𝐀𝐂𝐊+𝐒𝐘𝐒𝐓𝐄𝐌+֎"> 
+<img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF8800&center=falso&vCenter=falso&lines=%F0%9F%A7%A0+Vemonbot+%C3%A9+RenanBOT.amine+%F0%9F%A5%89;%F0%9F%A4%96+Bot+Oficial+Ativado+%E2%9A%99%EF%B8%8F;%F0%9F%94%A5+Feito+com+Intelig%C3%AAncia+%F0%9F%94%A5"> 
