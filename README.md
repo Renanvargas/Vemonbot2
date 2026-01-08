@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <p>
-<img src= "https://various-blush-9uqzwosczu.edgeone.app/E7673C11-331E-4A8C-9993-7F72C3006545.png" alt="RenanBOT v4" width="720">
+<img src= "https://ibb.co/JFpCCqSk" alt="RenanBOT v4" width="720">
 </p>
 
 <p align="center">
