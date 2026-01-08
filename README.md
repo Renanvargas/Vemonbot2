@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <p>
-<img src="https://i.ibb.co/JFpCCqSk /renanbot.png" alt="RenanBOT v4" width="720">
+<img src="https://i.ibb.co/JFpCCqSk /renanbot.png" alt="RenanBOT v4" width="900">
 </p>
 
 <p align="center">
