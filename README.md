@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <p>
-<img src="[url=https://postimages.org/][img]https://i.postimg.cc/fkZKb15t/E7673C11-331E-4A8C-9993-7F72C3006545.png[/img][/url]" alt="RenanBOT v4" width="720">
+<img src="[url=https://postimages.org/][img]https://i.postimg.cc/fkZKb15t/E7673C11-331E-4A8C-9993-7F72C3006545.png[/img][/url]" alt="RenanBOT v4" width="150">
 </p>
 
 <p align="center">
