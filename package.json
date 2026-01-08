@@ -19,7 +19,7 @@
     "request": "^2.88.2"
   },
   "name": "Renan Vemon",
-  "description": "<div align=\"center\"> <img src=\"https://telegra.ph/file/fb00d09b7dfbf0b11d364.jpg\" alt=\"BLACK MD - BOT\" width=\"300\" />",
+  "description": "<div align=\"center\"> <img src=\"https://cuddly-apricot-rd5vwba7uo.edgeone.app/A4FE7EAA-0A5D-473C-9951-C0F03E51AAFB.png\" alt=\"Vemonbot2 - BOT\" width=\"300\" />",
   "version": "4.2.6",
   "main": "index.js",
   "devDependencies": {},
@@ -30,6 +30,6 @@
   "keywords": [
     "BOT"
   ],
-  "author": "matheuzinho",
+  "author": "Renanzinho",
   "license": "MIT"
 }
