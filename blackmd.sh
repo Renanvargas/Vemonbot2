@@ -38,7 +38,7 @@ while :
 
 do
 
-printf "${GREEN}︎BLACK-MD - Auto reconexão ativada para prevenção de quedas...\n\n"
+printf "${GREEN}Vemonbot2 - Auto reconexão ativada para prevenção de quedas...\n\n"
 
 node start.js --code
 
