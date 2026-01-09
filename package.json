@@ -1,35 +1,39 @@
 {
-  "dependencies": {
-    "@whiskeysockets/baileys": "github:whiskeysockets/baileys",
-    "axios": "^0.21.1",
-    "cfonts": "^2.10.0",
-    "cheerio": "^1.0.0-rc.12",
-    "colors": "^1.4.0",
-    "escape-string-regexp": "^1.0.5",
-    "fake-useragent": "^1.0.1",
-    "fluent-ffmpeg": "^2.1.2",
-    "fs-extra": "^11.1.0",
-    "jsdom": "^19.0.0",
-    "linkifyjs": "^4.1.0",
-    "moment-timezone": "^0.5.40",
-    "multistream": "^4.1.0",
-    "node-fetch": "^2.6.7",
-    "node-webpmux": "^3.1.1",
-    "qrcode-terminal": "^0.12.0",
-    "request": "^2.88.2"
-  },
-  "name": "Renan Vemon",
-  "description": "<div align=\"center\"> <img src=\"https://cuddly-apricot-rd5vwba7uo.edgeone.app/A4FE7EAA-0A5D-473C-9951-C0F03E51AAFB.png\" alt=\"Vemonbot2 - BOT\" width=\"300\" />",
-  "version": "4.2.6",
-  "main": "index.js",
-  "devDependencies": {},
+  "name": "TED-BOT",
+  "version": "0.2",
+  "description": "🤖 Bot personalizado usando Baileys",
+  "author": "tedzinho",
+  "license": "MIT",
+  "main": "temux.js",
   "scripts": {
-    "start": "sh blackmd.sh",
-    "test": "node start.js"
+    "start": "node temux.js",
+    "dev": "node --watch ./temux.js",
+    "loop": "bash ./start.sh",
+    "pm2:start": "pm2 start temux.js --name bot-zero --watch",
+    "pm2:restart": "pm2 restart bot-zero",
+    "pm2:stop": "pm2 stop bot-zero",
+    "pm2:logs": "pm2 logs bot-zero",
+    "test": "echo \"No test specified\" && exit 0"
   },
-  "keywords": [
-    "BOT"
-  ],
-  "author": "Renanzinho",
-  "license": "MIT"
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.21",
+    "acrcloud": "^1.4.0",
+    "assemblyai": "^4.16.1",
+    "axios": "^1.11.0",
+    "cfonts": "^2.10.0",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.1.0",
+    "crypto": "^1.0.1",
+    "file-type": "^21.0.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "format-duration-time": "^1.5.4",
+    "multer": "^2.0.2",
+    "node-webpmux": "^3.2.1",
+    "nodemailer": "^7.0.6",
+    "pino": "^9.7.0",
+    "pm2": "^5.4.2",
+    "readline": "^1.3.0",
+    "soundcloud-scraper": "^5.0.3",
+    "systeminformation": "^5.27.8"
+  }
 }
