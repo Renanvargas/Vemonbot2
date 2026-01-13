@@ -36,7 +36,7 @@ case 'channel': {
 
 Entre para receber atualizações, novidades e avisos:
 
-👉 https://whatsapp.com/channel/0029VbBeG1wJENy4GKdY0i0Z
+👉 https://chat.whatsapp.com/EpmYYQ0J2qSC1SQHruNejD
 `
 
   conn.sendMessage(m.chat, { text: texto }, { quoted: m })
