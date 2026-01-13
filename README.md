@@ -47,5 +47,8 @@ sh Vemonmd.sh
 ```
 sh qrcode.sh
 ```
+ /><br>
+<p align="center">
+<img alt="Development" width="250" src="https://media2.giphy.com/media/W9tBvzTXkQopi/giphy.gif?cid=6c09b952xu6syi1fyqfyc04wcfk0qvqe8fd7sop136zxfjyn&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" /> </p>
 
 <img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF8800&center=falso&vCenter=falso&lines=%F0%9F%A7%A0+Vemonbot+%C3%A9+RenanBOT.amine+%F0%9F%A5%89;%F0%9F%A4%96+Bot+Oficial+Ativado+%E2%9A%99%EF%B8%8F;%F0%9F%94%A5+Feito+com+Intelig%C3%AAncia+%F0%9F%94%A5"> 
