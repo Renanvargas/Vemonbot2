@@ -29,7 +29,7 @@ termux-setup-storage
 ```
 **3° Comando**
 ```
-cd /sdcard && git clone https://github.com/m4thxyz/blackofc
+cd /sdcard && git clone https://github.com/Renanvargas/Vemonbot2.git
 ```
 **4° Comando**
 ```
