@@ -33,7 +33,7 @@ cd /sdcard && git clone https://github.com/Renanvargas/Vemonbot2.git
 ```
 **4° Comando**
 ```
-cd blackofc && sh blackmd.sh
+cd Vemonbot2 && sh Vemonmd.sh
 ```
 
 ## 🖲️ START DO BOT 🖲️ <img src="https://user-images.githubusercontent.com/108157095/182053901-78e4a217-51ba-42a3-8ec5-38ed978ad752.png" height="25px">
@@ -41,7 +41,7 @@ cd blackofc && sh blackmd.sh
 npm start
 ```
 ```
-sh blackmd.sh
+sh Vemonmd.sh
 ```
 ## Gerar Um Novo QR  <img src="https://user-images.githubusercontent.com/108157095/182053978-d1a08952-4625-4e3f-b469-c8ebe4f22ac8.png" height="25px">
 ```
