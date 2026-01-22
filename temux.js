@@ -1,18 +1,17 @@
-/**
- * Loader principal do Vemonbot2
- * Compatível com CommonJS
- */
+#!/usr/bin/env node
 
-const fs = require('fs')
+console.log('🚀 Iniciando Vemonbot2 no Termux...')
 
-console.log('🚀 Iniciando Vemonbot2...')
+require('dotenv').config()
 
-// Detecta automaticamente o arquivo principal
-if (fs.existsSync('./connect.js')) {
-  require('./connect.js')
-} else if (fs.existsSync('./arcc.js')) {
-  require('./arcc.js')
-} else {
-  console.error('❌ Nenhum arquivo principal encontrado (connect.js ou arcc.js)')
-  process.exit(1)
-}
+// carrega o arquivo principal de conexão
+require('./connect')
+
+// segurança: evita o bot fechar sozinho
+process.on('uncaughtException', err => {
+  console.error('❌ Erro não tratado:', err)
+})
+
+process.on('unhandledRejection', err => {
+  console.error('❌ Promise rejeitada:', err)
+})
