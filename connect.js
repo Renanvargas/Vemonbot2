@@ -1,23 +1,35 @@
-require('dotenv').config()
-const fs = require('fs')
-const path = require('path')
+const {
+  default: makeWASocket,
+  useMultiFileAuthState,
+  fetchLatestBaileysVersion
+} = require('@whiskeysockets/baileys')
 
-console.log('📡 connect.js carregado')
+const readline = require('readline')
 
-// ===== AQUI ENTRA SEU CÓDIGO DO BAILEYS =====
-// (o Vemonbot2 já tem isso, NÃO apague)
-// ==========================================
+async function connect() {
+  const { state, saveCreds } = await useMultiFileAuthState('./session')
+  const { version } = await fetchLatestBaileysVersion()
 
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  })
 
-// ===== CARREGADOR DE PLUGINS =====
-const pluginsPath = path.join(__dirname, 'plugins')
+  rl.question('📱 Digite seu número com DDI (ex: 5532998665591): ', async (number) => {
+    const sock = makeWASocket({
+      version,
+      auth: state,
+      printQRInTerminal: false,
+      browser: ['Vemonbot2', 'Chrome', '1.0.0']
+    })
 
-if (fs.existsSync(pluginsPath)) {
-  fs.readdirSync(pluginsPath).forEach(dir => {
-    const pluginIndex = path.join(pluginsPath, dir, 'index.js')
-    if (fs.existsSync(pluginIndex)) {
-      require(pluginIndex)
-      console.log(`✅ Plugin carregado: ${dir}`)
-    }
+    sock.ev.on('creds.update', saveCreds)
+
+    const code = await sock.requestPairingCode(number)
+    console.log(`🔢 Código de pareamento: ${code}`)
+
+    rl.close()
   })
 }
+
+connect()
