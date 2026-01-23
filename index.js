@@ -1,7 +1,7 @@
 const { Client, LocalAuth } = require('whatsapp-web.js')
 const qrcode = require('qrcode-terminal')
 
-const prefix = '!'
+const prefix = '-'
 const dono = '5532998665591@c.us'
 const nomeDono = 'Renanvargas'
 const botNome = 'R.v'
