@@ -1,6 +1,11 @@
 const { Client, LocalAuth } = require('whatsapp-web.js')
 const qrcode = require('qrcode-terminal')
 
+// CORES ANSI (Termux)
+const AZUL = '\x1b[34m'
+const VERDE = '\x1b[32m'
+const RESET = '\x1b[0m'
+
 const prefix = '-'
 const dono = '5532998665591@c.us'
 const nomeDono = 'Renanvargas'
@@ -14,15 +19,40 @@ const client = new Client({
   }
 })
 
+/* ===============================
+   QR CODE
+================================ */
 client.on('qr', (qr) => {
+  console.clear()
+  console.log(`${AZUL}==============================${RESET}`)
+  console.log(`${AZUL}📱 Vemonbot2 - Conexão${RESET}`)
+  console.log(`${AZUL}==============================${RESET}\n`)
+
+  console.log(`${AZUL}Escaneie o QR Code abaixo${RESET}`)
   qrcode.generate(qr, { small: true })
-  console.log('📲 Escaneie o QR ou conecte com número')
+
+  console.log(`\n${AZUL}Ou conecte com número de telefone${RESET}`)
 })
 
+/* ===============================
+   CÓDIGO DE PAREAMENTO (NÚMERO)
+================================ */
+client.on('pairing_code', (code) => {
+  console.log(`\n${AZUL}📱 Conectar com número de telefone${RESET}`)
+  console.log(`${AZUL}➡️ Insira este código no WhatsApp:${RESET}`)
+  console.log(`${VERDE}${code}${RESET}`)
+})
+
+/* ===============================
+   BOT PRONTO
+================================ */
 client.on('ready', () => {
-  console.log(`✅ ${botNome} conectado com sucesso!`)
+  console.log(`\n${VERDE}✅ ${botNome} conectado com sucesso!${RESET}`)
 })
 
+/* ===============================
+   COMANDOS
+================================ */
 client.on('message', async msg => {
   if (!msg.body.startsWith(prefix)) return
 
