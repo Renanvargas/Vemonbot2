@@ -42,6 +42,5 @@ termux-setup-storage
 cd /sdcard && git clone https://github.com/Renanvargas/Vemonbot2.git
 cd Vemonbot2
 sh Vemonmd.sh
-<img src="https://user-images.githubusercontent.com/108157095/182053901-78e4a217-51ba-42a3-8ec5-38ed978ad752.png" height="25px">
 npm start
 sh Vemonmd.sh
